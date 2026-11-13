@@ -3,34 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCECS Coding Competition</title>
-     <link rel="stylesheet" href="style.css">
+    <title>School Register Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-<img src="coding.jpg" alt="Coding Competition">
-<h1> OCECS Coding Competition</h1>
- <h2>Welcome to the Competition!</h2>
-  <p>
-     Join us for an exciting coding competition where
-     students can test their coding skills and solve
-     interesting challenges.
-  </p>
-  <div class="details">
-            <p><b> Date:</b> October 15, 2026</p>
-            <p><b> Time:</b> 10:00 AM</p>
-            <p><b> Venue:</b> Computer Lab</p>
-        </div>
-        <h3>What to Expect</h3>
-        <ul>
-            <li>Fun coding challenges</li>
-            <li>Learn new skills</li>
-            <li>Compete with students</li>
-            <li>Win certificates</li>
-        </ul>
 
-        <button>Register Now</button>
+<header>
+    <h1>Student register form</h1>
+    <h2>STUDENT CLASS REGISTER</h2>
+</header>
 
-    </div>
+<div class="container">
+    <h2>Class Attendance Register</h2>
+
+    <label>Class:</label>
+    <input type="text" placeholder="Enter class">
+
+    <label>Email:</label>
+    <input type="text" placeholder="Enter Email">
+
+    <label>Number:</label>
+    <input type="text" placeholder="Enter Number ">
+
+    <label>Teacher's Name:</label>
+    <input type="text" placeholder="Enter teacher's name">
+
+    <label>Date of Birth:</label>
+    <input type="text" placeholder="Enter date of birth">
+
+    <table>
+        <tr>
+            <th>S/N</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Present</th>
+            <th>Absent</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>jss 1</td>
+            <td>Male</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>jss 2</td>
+            <td>Female</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>jss 3</td>
+            <td>Male</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>ss 1</td>
+            <td>female</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>ss 2</td>
+            <td>male</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>ss 3</td>
+            <td>female</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+
+    <button onclick="window.print()">Print Register</button>
+</div>
+
+<footer>
+    <p>© 2026 Bright Future School</p>
+</footer>
+
 </body>
 </html>
