@@ -1,69 +1,52 @@
-
-/* 1. MOBILE NAVIGATION */
+```javascript
+// GET ELEMENTS FROM THE HTML
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
+const contactForm = document.getElementById("contactForm");
+const result = document.getElementById("result");
+const year = document.getElementById("year");
 
+// DISPLAY THE CURRENT YEAR IN THE FOOTER
+year.textContent = new Date().getFullYear();
+
+// OPEN AND CLOSE THE MOBILE MENU
 menuBtn.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("active");
+    navLinks.classList.toggle("show");
 
-    menuBtn.textContent = isOpen ? "✕" : "☰";
+    const isOpen = navLinks.classList.contains("show");
     menuBtn.setAttribute("aria-expanded", isOpen);
     menuBtn.setAttribute(
         "aria-label",
-        isOpen ? "Close navigation" : "Open navigation"
+        isOpen ? "Close navigation menu" : "Open navigation menu"
     );
 });
 
-/* CLOSE MENU AFTER CLICKING A LINK */
-document.querySelectorAll(".nav-links a").forEach(function (link) {
+// CLOSE THE MOBILE MENU AFTER CLICKING A LINK
+const links = navLinks.querySelectorAll("a");
+
+links.forEach(function (link) {
     link.addEventListener("click", function () {
-        navLinks.classList.remove("active");
-        menuBtn.textContent = "☰";
+        navLinks.classList.remove("show");
         menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.setAttribute("aria-label", "Open navigation menu");
     });
 });
 
-/* 2. QUOTATION FORM */
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-
+// HANDLE THE CONTACT FORM
 contactForm.addEventListener("submit", function (event) {
+    // Stop the browser from reloading the page
     event.preventDefault();
 
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const projectType = document.getElementById("projectType").value;
-    const budget = document.getElementById("budget").value;
+    // GET THE INFORMATION ENTERED BY THE VISITOR
+    const name = document.getElementById("name").value.trim();
+    const service = document.getElementById("service").value;
 
-    if (!fullName || !email || !phone || !projectType || !budget) {
-        formMessage.textContent = "Please fill in all required fields.";
-        formMessage.style.color = "#b42318";
-        return;
-    }
+    // SHOW A THANK-YOU MESSAGE
+    result.textContent =
+        "Thank you, " + name + "! Your enquiry about " +
+        service + " has been recorded in this demo.";
 
-    // Demonstration only: this does not send a real quotation request.
-    formMessage.textContent =
-        `Thank you, ${fullName}! Your ${projectType} enquiry ` +
-        "has been prepared. This demo has not sent it to the business.";
-
-    formMessage.style.color = "#287a3e";
-
-    console.log("Demo quotation request:", {
-        fullName: fullName,
-        email: email,
-        phone: phone,
-        projectType: projectType,
-        budget: budget,
-        message: document.getElementById("message").value.trim()
-    });
-
+    // CLEAR THE FORM
     contactForm.reset();
 });
-
-/* 3. AUTOMATIC COPYRIGHT YEAR */
-document.getElementById("year").textContent =
-    new Date().getFullYear();
-
-/* 4. WEBSITE STARTUP MESSAGE */
-console.log("Welcome to Royal POP Designs!");
+```

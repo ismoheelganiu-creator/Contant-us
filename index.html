@@ -1,376 +1,330 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal POP Designs | Ceiling & Interior Decoration</title>
+    <title>Elegant POP Decoration</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<header class="header">
-    <nav class="navbar">
-        <a href="#home" class="logo">⌂ POP <span>LUXE</span>
-            <small>CEILING & INTERIOR DECORATION</small>
-        </a>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Elegant POP</h1>
 
-        <button class="menu-btn" id="menuBtn"
-                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
-        </ul>
-    </nav>
-</header>
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Open navigation menu">☰</button>
+        </nav>
+    </header>
 
-<main>
-    <!-- HERO SECTION -->
+    <!-- Home Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <p class="eyebrow">BEAUTIFUL SPACES. BETTER LIVING.</p>
-            <h1>Professional POP Ceiling &amp;
-                <span>Interior Decoration Services</span>
-            </h1>
-            <p class="hero-description">
-                Transform your home or office with modern POP designs,
-                elegant finishes, and quality craftsmanship. We help
-                create beautiful spaces that feel comfortable and stylish.
+            <p class="welcome">WELCOME TO ELEGANT POP</p>
+            <h2>Beautiful Ceilings, Beautiful Homes</h2>
+
+            <p>
+                We create modern POP ceilings, stylish wall designs,
+                and beautiful interior decorations for homes and offices.
             </p>
-            <div class="hero-buttons">
-                <a href="#gallery" class="btn gold-btn">View Our Designs →</a>
-                <a href="#contact" class="btn outline-btn">Contact Us</a>
-            </div>
+
+            <a href="#services" class="btn">Explore Our Services</a>
+            <a href="#contact" class="btn btn-light">Contact Us</a>
         </div>
     </section>
 
-    <!-- TRUST FEATURES -->
-    <section class="features">
-        <div><span>✧</span><h3>Modern Designs</h3><p>Beautiful, stylish spaces</p></div>
-        <div><span>◇</span><h3>Quality Materials</h3><p>Careful finishing</p></div>
-        <div><span>♧</span><h3>Skilled Professionals</h3><p>Attention to detail</p></div>
-        <div><span>☆</span><h3>Fair Pricing</h3><p>Options for your budget</p></div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section services" id="services">
-        <div class="section-intro">
-            <p class="eyebrow">WHAT WE DO</p>
-            <h2>Our Services</h2>
-            <p>We offer POP and interior decoration services to make
-                your space beautiful, modern, and comfortable.</p>
-            <a href="#contact" class="btn gold-btn">Explore Services →</a>
-        </div>
-
-        <div class="services-grid">
-            <article class="service-card">
-                <span class="service-icon">⌂</span>
-                <div><h3>POP Ceiling Design</h3>
-                <p>Modern and classic ceiling designs for homes and offices.</p></div>
-            </article>
-            <article class="service-card">
-                <span class="service-icon">▦</span>
-                <div><h3>Wall Decoration</h3>
-                <p>Decorative wall designs, mouldings, and patterns.</p></div>
-            </article>
-            <article class="service-card">
-                <span class="service-icon">♜</span>
-                <div><h3>Cornices</h3>
-                <p>Elegant ceiling edges for a neat, finished appearance.</p></div>
-            </article>
-            <article class="service-card">
-                <span class="service-icon">♧</span>
-                <div><h3>Light Fittings</h3>
-                <p>Decorative spaces for LED lights and chandeliers.</p></div>
-            </article>
-            <article class="service-card">
-                <span class="service-icon">▧</span>
-                <div><h3>Partitioning</h3>
-                <p>Interior partitions for modern living and office spaces.</p></div>
-            </article>
-            <article class="service-card">
-                <span class="service-icon">✧</span>
-                <div><h3>Painting & Finishing</h3>
-                <p>Smooth finishes and colour coordination for interiors.</p></div>
-            </article>
-        </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section gallery" id="gallery">
-        <div class="gallery-heading">
-            <div>
-                <p class="eyebrow">OUR DESIGNS</p>
-                <h2>Our Project Gallery</h2>
-                <p>Explore ideas for your next ceiling or interior project.</p>
-            </div>
-            <a href="#contact" class="btn gold-btn">Request a Design →</a>
-        </div>
-
-        <div class="gallery-grid">
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
-                     alt="Elegant living room ceiling and interior">
-                <div><h3>Living Room</h3><p>Modern interior inspiration</p></div>
-            </article>
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
-                     alt="Beautiful modern interior design">
-                <div><h3>Modern Interior</h3><p>Clean and stylish finishing</p></div>
-            </article>
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
-                     alt="Elegant decorative living room">
-                <div><h3>Luxury Living</h3><p>Comfort with elegance</p></div>
-            </article>
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=85"
-                     alt="Modern bedroom interior inspiration">
-                <div><h3>Bedroom Design</h3><p>Relaxing interior ideas</p></div>
-            </article>
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-                     alt="Spacious home interior">
-                <div><h3>Home Interior</h3><p>Beautiful spaces for living</p></div>
-            </article>
-            <article class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
-                     alt="Contemporary home decoration">
-                <div><h3>Premium Finish</h3><p>Attention to every detail</p></div>
-            </article>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section about" id="about">
+    <!-- About Section -->
+    <section class="about section" id="about">
         <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
-                 alt="Beautiful finished home interior">
-            <div class="experience"><strong>10+</strong><span>Years of Experience</span></div>
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
+                alt="Beautiful modern living room interior">
         </div>
 
-        <div class="about-content">
-            <p class="eyebrow">ABOUT OUR COMPANY</p>
-            <h2>We Bring Your Vision to Life</h2>
+        <div class="about-text">
+            <p class="small-title">ABOUT OUR COMPANY</p>
+            <h2>We Make Your Space Look Special</h2>
+
             <p>
-                Royal POP Designs is dedicated to improving homes and
-                commercial spaces through thoughtful ceiling designs and
-                interior decoration.
+                Elegant POP Decoration provides creative ceiling designs
+                and interior decoration services for homes, offices,
+                shops, and other buildings.
             </p>
+
             <p>
-                We work with customers to understand their ideas, choose
-                suitable designs, and deliver carefully finished spaces.
-                Our goal is to combine beauty, comfort, and value.
+                Our goal is to help customers create attractive,
+                comfortable, and welcoming spaces. We pay attention
+                to design, finishing, and the needs of every customer.
             </p>
-            <ul class="check-list">
-                <li>✓ Residential and commercial projects</li>
-                <li>✓ Creative ceiling designs</li>
-                <li>✓ Careful workmanship and finishing</li>
-                <li>✓ Clear communication with customers</li>
+
+            <ul class="about-list">
+                <li>✔ Modern POP ceiling designs</li>
+                <li>✔ Creative wall decoration</li>
+                <li>✔ Professional finishing</li>
+                <li>✔ Designs based on your ideas</li>
             </ul>
-            <a href="#contact" class="btn gold-btn">Learn More →</a>
+
+            <a href="#contact" class="btn">Discuss Your Project</a>
         </div>
     </section>
 
-    <!-- HOW WE WORK -->
-    <section class="section process">
+    <!-- Services Section -->
+    <section class="services section" id="services">
         <div class="section-heading">
-            <p class="eyebrow">OUR WORK PROCESS</p>
-            <h2>Four Steps to a Beautiful Space</h2>
-            <p>From your first idea to the final finish.</p>
+            <p class="small-title">WHAT WE DO</p>
+            <h2>Our Professional Services</h2>
+            <p>Explore our decoration services for different spaces.</p>
         </div>
-        <div class="process-grid">
-            <article><span>01</span><h3>Consultation</h3>
-                <p>Tell us about your room, ideas, and budget.</p></article>
-            <article><span>02</span><h3>Planning</h3>
-                <p>Discuss designs, measurements, and materials.</p></article>
-            <article><span>03</span><h3>Installation</h3>
-                <p>Our team works on the agreed design and finish.</p></article>
-            <article><span>04</span><h3>Final Review</h3>
-                <p>Review the completed work with the team.</p></article>
+
+        <div class="service-container">
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern living room ceiling and interior">
+                <div class="card-content">
+                    <h3>POP Ceiling Design</h3>
+                    <p>
+                        We design stylish POP ceilings for living rooms,
+                        bedrooms, offices, and other indoor spaces.
+                    </p>
+                    <a href="#contact">Request Information →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern home interior decoration">
+                <div class="card-content">
+                    <h3>Interior Decoration</h3>
+                    <p>
+                        We help plan beautiful interior spaces with
+                        suitable colours, lighting, and decoration.
+                    </p>
+                    <a href="#contact">Request Information →</a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+                    alt="Stylish wall and room design">
+                <div class="card-content">
+                    <h3>Wall Decoration</h3>
+                    <p>
+                        Add character to your home with decorative
+                        wall features and attractive finishing.
+                    </p>
+                    <a href="#contact">Request Information →</a>
+                </div>
+            </article>
+
         </div>
     </section>
 
-    <!-- PRICING -->
-    <section class="section pricing" id="pricing">
+    <!-- Why Choose Us -->
+    <section class="why-us section">
         <div class="section-heading">
-            <p class="eyebrow">SAMPLE PRICE GUIDE</p>
-            <h2>Decoration Packages</h2>
-            <p>Choose a starting package and request a quotation.</p>
+            <p class="small-title">WHY CHOOSE US?</p>
+            <h2>Our Commitment to Quality</h2>
         </div>
 
-        <div class="pricing-grid">
-            <article class="price-card">
-                <h3>Basic</h3>
-                <p class="package-text">Simple ceiling design</p>
-                <h2>₦25,000<span>+</span></h2>
-                <ul>
-                    <li>✓ Basic ceiling design</li>
-                    <li>✓ Standard finishing</li>
-                    <li>✓ Material discussion</li>
-                </ul>
-                <a href="#contact" class="btn outline-dark">Get Started</a>
-            </article>
-
-            <article class="price-card featured">
-                <span class="popular">POPULAR</span>
-                <h3>Standard</h3>
-                <p class="package-text">Ceiling and cornices</p>
-                <h2>₦45,000<span>+</span></h2>
-                <ul>
-                    <li>✓ Decorative ceiling design</li>
-                    <li>✓ Cornice options</li>
-                    <li>✓ Lighting layout planning</li>
-                </ul>
-                <a href="#contact" class="btn gold-btn">Get Started</a>
-            </article>
-
-            <article class="price-card">
-                <h3>Premium</h3>
-                <p class="package-text">Detailed interior design</p>
-                <h2>₦75,000<span>+</span></h2>
-                <ul>
-                    <li>✓ Custom ceiling design</li>
-                    <li>✓ Wall moulding options</li>
-                    <li>✓ Finishing consultation</li>
-                </ul>
-                <a href="#contact" class="btn outline-dark">Get Started</a>
-            </article>
-        </div>
-        <p class="price-note">Prices are sample figures for the website project,
-            not verified market rates. Actual costs depend on area, materials,
-            labour, design, and lighting.</p>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials" id="testimonials">
-        <div class="section-heading">
-            <p class="eyebrow">CUSTOMER FEEDBACK</p>
-            <h2>What Our Clients Say</h2>
-            <p>Example testimonial cards. Replace them with real reviews.</p>
-        </div>
-        <div class="testimonial-grid">
-            <article class="testimonial-card">
-                <p class="stars">★★★★★</p>
-                <blockquote>"The design process was easy, and the finished
-                    space looked beautiful."</blockquote>
-                <h3>Sample Customer One</h3>
-            </article>
-            <article class="testimonial-card">
-                <p class="stars">★★★★★</p>
-                <blockquote>"The team listened to my ideas and explained
-                    the available options clearly."</blockquote>
-                <h3>Sample Customer Two</h3>
-            </article>
-            <article class="testimonial-card">
-                <p class="stars">★★★★★</p>
-                <blockquote>"I appreciated the attention to detail and
-                    communication throughout the project."</blockquote>
-                <h3>Sample Customer Three</h3>
-            </article>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-        <div class="contact-info">
-            <p class="eyebrow">GET IN TOUCH</p>
-            <h2>Let's Discuss Your Project</h2>
-            <p>Tell us about your ceiling design or interior decoration
-                project so you can request a quotation.</p>
-
-            <div class="contact-item"><span>☎</span>
-                <div><h3>Phone</h3><p>+234 800 000 0000</p></div>
+        <div class="features">
+            <div class="feature">
+                <span>✦</span>
+                <h3>Creative Ideas</h3>
+                <p>We help you explore designs that match your space.</p>
             </div>
-            <div class="contact-item"><span>✉</span>
-                <div><h3>Email</h3><p>hello@example.com</p></div>
+
+            <div class="feature">
+                <span>✓</span>
+                <h3>Quality Finishing</h3>
+                <p>We focus on neat details and a professional finish.</p>
             </div>
-            <div class="contact-item"><span>⌖</span>
-                <div><h3>Location</h3><p>Your business address, Lagos, Nigeria</p></div>
+
+            <div class="feature">
+                <span>⌂</span>
+                <h3>Home and Office</h3>
+                <p>We provide design ideas for different types of spaces.</p>
+            </div>
+
+            <div class="feature">
+                <span>♡</span>
+                <h3>Customer Care</h3>
+                <p>We listen to your needs before planning a project.</p>
             </div>
         </div>
-
-        <form class="contact-form" id="contactForm">
-            <h3>Request a Quote</h3>
-
-            <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text"
-                   placeholder="Your full name" required>
-
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email"
-                   placeholder="Your email address" required>
-
-            <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel"
-                   placeholder="Your phone number" required>
-
-            <label for="projectType">Service Required</label>
-            <select id="projectType" name="projectType" required>
-                <option value="">Choose a service</option>
-                <option>POP Ceiling Design</option>
-                <option>Wall Decoration</option>
-                <option>Cornices</option>
-                <option>Light Fittings</option>
-                <option>Partitioning</option>
-                <option>Painting and Finishing</option>
-                <option>Full Interior Decoration</option>
-            </select>
-
-            <label for="budget">Estimated Budget</label>
-            <select id="budget" name="budget" required>
-                <option value="">Select your budget</option>
-                <option>Below ₦100,000</option>
-                <option>₦100,000 – ₦300,000</option>
-                <option>₦300,000 – ₦500,000</option>
-                <option>Above ₦500,000</option>
-                <option>Need advice</option>
-            </select>
-
-            <label for="message">Project Details</label>
-            <textarea id="message" name="message" rows="4"
-                      placeholder="Describe your room and preferred design"></textarea>
-
-            <button type="submit" class="btn gold-btn submit-btn">
-                Send Quote Request →
-            </button>
-            <p id="formMessage" role="status" aria-live="polite"></p>
-        </form>
     </section>
-</main>
 
-<!-- FOOTER --><img src="images/ceiling1.jpg"
-     alt="POP ceiling design">
-<footer class="footer">
-    <div class="footer-content">
-        <div>
-            <a href="#home" class="logo">POP <span>LUXE</span></a>
-            <p>Creative POP ceilings and interior decoration for beautiful spaces.</p>
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="section-heading">
+            <p class="small-title">OUR INSPIRATION</p>
+            <h2>Explore Our Design Gallery</h2>
+            <p>Browse interior designs that can inspire your next project.</p>
         </div>
-        <div><h3>Quick Links</h3>
-            <a href="#home">Home</a><a href="#about">About</a>
-            <a href="#services">Services</a><a href="#gallery">Gallery</a>
-        </div>
-        <div><h3>Our Services</h3>
-            <a href="#services">Ceiling Design</a><a href="#services">Wall Decoration</a>
-            <a href="#services">Cornices</a><a href="#services">Painting</a>
-        </div>
-        <div><h3>Working Hours</h3>
-            <p>Monday – Saturday</p><p>8:00 AM – 6:00 PM</p>
-            <a href="#contact">Request an appointment</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© <span id="year"></span> Royal POP Designs. All rights reserved.</p>
-        <a href="#home">Back to Top ↑</a>
-    </div>
-</footer>
 
-<script src="script.js"></script>
+        <div class="gallery-container">
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                alt="Elegant living room design">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                alt="Modern home interior">
+
+            <img
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80"
+                alt="Comfortable decorated room">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80"
+                alt="Contemporary living space">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                alt="Bright modern interior">
+
+            <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+                alt="Stylish home decoration">
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action">
+        <h2>Ready to Improve Your Space?</h2>
+        <p>Tell us about your POP ceiling or interior decoration idea.</p>
+        <a href="#contact" class="btn btn-light">Start Your Project</a>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section" id="reviews">
+        <div class="section-heading">
+            <p class="small-title">CUSTOMER FEEDBACK</p>
+            <h2>What Customers Say</h2>
+        </div>
+
+        <div class="review-container">
+            <article class="review-card">
+                <p class="stars">★★★★★</p>
+                <p>
+                    "I love the modern design ideas and the attention
+                    given to the details."
+                </p>
+                <h3>— Sample Customer 1</h3>
+            </article>
+
+            <article class="review-card">
+                <p class="stars">★★★★★</p>
+                <p>
+                    "The website made it easy to explore different
+                    interior decoration styles."
+                </p>
+                <h3>— Sample Customer 2</h3>
+            </article>
+
+            <article class="review-card">
+                <p class="stars">★★★★★</p>
+                <p>
+                    "There are many useful ideas here for planning
+                    a beautiful room."
+                </p>
+                <h3>— Sample Customer 3</h3>
+            </article>
+        </div>
+        <p class="demo-note">These are sample reviews for the website design.
+            Replace them with real customer feedback.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p class="small-title">GET IN TOUCH</p>
+            <h2>Contact Us About Your Project</h2>
+            <p>Complete the form and tell us what you have in mind.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk About Your Design</h3>
+                <p>
+                    Have a question about POP ceilings, wall decoration,
+                    or interior design? Send us a message.
+                </p>
+
+                <p><strong>Business:</strong> Elegant POP Decoration</p>
+                <p><strong>Services:</strong> Ceilings and Interiors</p>
+                <p><strong>Working hours:</strong> Monday – Saturday</p>
+            </div>
+
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="service">Service Needed</label>
+                <select id="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="POP Ceiling">POP Ceiling</option>
+                    <option value="Interior Decoration">Interior Decoration</option>
+                    <option value="Wall Decoration">Wall Decoration</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Describe your project"
+                    required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="result" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Elegant POP Decoration</h2>
+        <p>Creative designs for beautiful spaces.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p>© <span id="year"></span> Elegant POP Decoration.
+            All rights reserved.</p>
+        <p>Website created with HTML, CSS, and JavaScript.</p>
+    </footer>
+
 </body>
 </html>
+```
