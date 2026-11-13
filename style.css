@@ -1,742 +1,147 @@
 
-/* =========================
-   GENERAL SETTINGS
-========================= */
-
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #fff8fc;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-    font-family: inherit;
-}
-
-/* =========================
-   NAVIGATION BAR
-========================= */
-
-.header {
-    background: #ffffff;
-    padding: 18px 6%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.logo {
-    color: #e91e63;
-    font-size: 25px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 22px;
-}
-
-.nav-links a {
-    color: #333;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #e91e63;
-}
-
-.nav-btn {
-    background: #e91e63;
-    color: white;
-    padding: 11px 22px;
-    border-radius: 25px;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
-
-.hero {
-    min-height: 620px;
-    padding: 80px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    background: linear-gradient(
-        120deg,
-        #fce4ec,
-        #f3e5f5,
-        #fff0f5
-    );
-}
-
-.hero-content {
-    max-width: 550px;
-}
-
-.small-title {
-    color: #e91e63;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    color: #9c1450;
-    font-size: 55px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-text {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.main-btn,
-.second-btn {
-    display: inline-block;
-    padding: 14px 25px;
-    margin: 5px;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.main-btn {
-    background: #e91e63;
-    color: white;
-}
-
-.second-btn {
-    background: white;
-    color: #e91e63;
-}
-
-.main-btn:hover,
-.second-btn:hover {
-    transform: translateY(-4px);
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 470px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 15px 35px rgba(120,0,60,0.2);
-}
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
-
-.section {
-    padding: 85px 8%;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-heading > p {
-    color: #e91e63;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.section-heading h2 {
-    color: #92154d;
-    font-size: 35px;
-    margin-top: 8px;
-}
-
-/* =========================
-   ABOUT SECTION
-========================= */
-
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.about-content {
-    flex: 1;
-}
-
-.about-content h3 {
-    font-size: 29px;
-    color: #e91e63;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    margin-bottom: 18px;
-    color: #555;
-}
-
-/* =========================
-   PARTY DETAILS
-========================= */
-
-.details {
-    background: #fff0f6;
-}
-
-.details-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-}
-
-.detail-card {
-    background: white;
-    padding: 35px 15px;
-    text-align: center;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    transition: 0.3s;
-}
-
-.detail-card:hover {
-    transform: translateY(-10px);
-}
-
-.detail-card span {
-    font-size: 40px;
-}
-
-.detail-card h3 {
-    color: #e91e63;
-    margin: 12px 0;
-}
-
-/* =========================
-   COUNTDOWN SECTION
-========================= */
-
-.countdown {
-    background: linear-gradient(
-        135deg,
-        #9c1450,
-        #e91e63,
-        #7b1fa2
-    );
-    color: white;
-    text-align: center;
-    padding: 85px 20px;
-}
-
-.countdown-content > p:first-child {
-    letter-spacing: 4px;
-    font-weight: bold;
-}
-
-.countdown h2 {
-    font-size: 36px;
-    margin: 15px 0 35px;
-}
-
-.timer-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.timer-box {
-    background: white;
-    color: #e91e63;
-    padding: 25px;
-    min-width: 115px;
-    border-radius: 15px;
-}
-
-.timer-box h3 {
-    font-size: 35px;
-}
-
-.timer-box p {
-    font-weight: bold;
-}
-
-#countdown-message {
-    margin-top: 30px;
-}
-
-/* =========================
-   GALLERY SECTION
-========================= */
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.gallery-item {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.gallery-item:hover {
-    transform: scale(1.03);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    display: block;
-}
-
-.gallery-item h3 {
-    padding: 18px;
-    color: #e91e63;
-    text-align: center;
-}
-
-/* =========================
-   ACTIVITIES SECTION
-========================= */
-
-.activities {
-    background: #fff0f6;
-}
-
-.activities-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.activity-card {
-    background: white;
-    padding: 35px 20px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
-    transition: 0.3s;
-}
-
-.activity-card:hover {
-    background: #fce4ec;
-    transform: translateY(-8px);
-}
-
-.activity-card span {
-    font-size: 45px;
-}
-
-.activity-card h3 {
-    color: #e91e63;
-    margin: 15px 0;
-}
-
-/* =========================
-   BIRTHDAY MESSAGE
-========================= */
-
-.message {
-    background: linear-gradient(
-        135deg,
-        #f8bbd0,
-        #e1bee7
-    );
-    text-align: center;
-}
-
-.message-content {
-    max-width: 750px;
-    margin: auto;
-}
-
-.message-content span {
-    font-size: 55px;
-}
-
-.message-content h2 {
-    color: #8e174e;
-    font-size: 35px;
-    margin: 15px 0;
-}
-
-.message-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.message-content h3 {
-    color: #9c1450;
-    font-size: 28px;
-}
-
-/* =========================
-   WISHES SECTION
-========================= */
-
-.wish-form,
-.rsvp-form {
-    max-width: 550px;
-    margin: auto;
-    padding: 35px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
-}
-
-.wish-form input,
-.wish-form textarea,
-.rsvp-form input,
-.rsvp-form select {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 18px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 15px;
-    outline: none;
-}
-
-.wish-form textarea {
-    height: 130px;
-    resize: vertical;
-}
-
-.wish-form input:focus,
-.wish-form textarea:focus,
-.rsvp-form input:focus {
-    border-color: #e91e63;
-}
-
-.wish-form button,
-.rsvp-form button {
-    width: 100%;
-    padding: 15px;
-    background: #e91e63;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.wish-form button:hover,
-.rsvp-form button:hover {
-    background: #9c1450;
-}
-
-#wishResult,
-#rsvpResult {
-    margin-top: 15px;
-    color: #e91e63;
-    font-weight: bold;
-}
-
-.wish-list {
-    max-width: 700px;
-    margin: 40px auto 0;
-    background: #fff0f6;
-    padding: 25px;
-    border-radius: 15px;
-}
-
-.wish-list h3 {
-    color: #e91e63;
-    margin-bottom: 15px;
-}
-
-.wish-message {
-    background: white;
-    padding: 15px;
-    margin: 12px 0;
-    border-radius: 10px;
-    text-align: left;
-}
-
-/* =========================
-   RSVP SECTION
-========================= */
-
-.rsvp {
-    background: #fff0f6;
-}
-
-/* =========================
-   MUSIC SECTION
-========================= */
-
-.music-box {
-    max-width: 550px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-}
-
-.music-box span {
-    font-size: 50px;
-}
-
-.music-box h3 {
-    color: #e91e63;
-    margin: 15px 0;
-}
-
-.music-box audio {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.music-note {
-    font-size: 13px;
-    color: #777;
-    margin-top: 15px;
-}
-
-/* =========================
-   CELEBRATION SECTION
-========================= */
-
-.celebration {
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #e91e63,
-        #9c27b0
-    );
-    color: white;
-}
-
-.celebration h2 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.celebration button {
-    margin-top: 25px;
-    background: white;
-    color: #e91e63;
-    border: none;
-    padding: 16px 30px;
-    border-radius: 30px;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.celebration button:hover {
-    transform: scale(1.08);
-}
-
-#celebrationMessage {
-    margin-top: 25px;
-    font-size: 25px;
-}
-
-/* =========================
-   CONTACT SECTION
-========================= */
-
-.contact-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    text-align: center;
-}
-
-.contact-container > div {
-    background: white;
-    padding: 30px 15px;
-    border-radius: 15px;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
-}
-
-.contact-container span {
-    font-size: 40px;
-}
-
-.contact-container h3 {
-    color: #e91e63;
-    margin: 12px 0;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    background: #4a1234;
+/* Header */
+header {
+    background-color: #14213d;
     color: white;
     text-align: center;
     padding: 45px 20px;
 }
 
-.footer h2 {
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0077b6;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #0077b6;
     margin-bottom: 15px;
 }
 
-.footer-links {
-    margin: 25px 0;
+/* Welcome */
+.welcome {
+    background-color: white;
+}
+
+/* Gallery */
+.gallery-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin-top: 25px;
 }
 
-.footer-links a {
+.gallery-card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-card h3 {
+    margin-top: 10px;
+    color: #14213d;
+}
+
+/* Audio and Video */
+.media-box {
+    background-color: white;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* About */
+#about {
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
     color: white;
-}
-
-.footer-links a:hover {
-    color: #ff80ab;
-}
-
-.copyright {
-    border-top: 1px solid #ffffff44;
-    padding-top: 20px;
+    text-align: center;
+    padding: 25px;
     margin-top: 20px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+/* Mobile Screen */
+@media (max-width: 600px) {
 
-@media (max-width: 1000px) {
-
-    .nav-links {
-        gap: 10px;
+    header h1 {
+        font-size: 25px;
     }
 
-    .nav-links a {
-        font-size: 13px;
+    nav a {
+        display: inline-block;
+        margin: 8px;
     }
 
-    .details-container {
-        grid-template-columns: repeat(2, 1fr);
+    .gallery-card {
+        width: 100%;
     }
-
-    .gallery-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .activities-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 700px) {
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h2 {
-        font-size: 40px;
-    }
-
-    .hero-image img {
-        height: 280px;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-image img {
-        height: 300px;
-    }
-
-    .gallery-container {
-        grid-template-columns: 1fr;
-    }
-
-    .activities-container {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .section-heading h2 {
-        font-size: 27px;
-    }
-
-}
-
-@media (max-width: 400px) {
-
-    .details-container {
-        grid-template-columns: 1fr;
-    }
-
-    .timer-box {
-        min-width: 90px;
-        padding: 15px;
-    }
-
-    .timer-box h3 {
-        font-size: 27px;
-    }
-
-    .wish-form,
-    .rsvp-form {
-        padding: 20px;
-    }
-
 }
