@@ -1,24 +1,483 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
-  <link rel="stylesheet" href="style.css">
+
+    <title>My Birthday Party Celebration</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div Class="container">
-        <h1>Contact us</h1>
-        <label for="Name"> Full Name</label>
-        <input type="name" id="Full Name" placeholder="Enter your full name"></label>
-        <label for="Name"> Email </label>
-        <input type="name" id="Email" placeholder="Enter your Email"></label>
-        <label for="Name">Subject </label>
-        <input type="name" id="Subject" placeholder="Enter your Subject"></label>
-        <label for="Name"> Messages </label>
-        <textarea type=padding: 50px; rows="6" id ="Messages" placeholder= Type your Messages here"> </textarea>
-        
-        <button type="Submit">Submit Here</button>  
-    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">🎂 Birthday Party</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#wishes">Wishes</a></li>
+            </ul>
+
+            <a href="#rsvp" class="nav-btn">Join Us</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title">YOU ARE INVITED!</p>
+
+            <h2>Let's Celebrate<br>
+                A Special Birthday!
+            </h2>
+
+            <p class="hero-text">
+                A beautiful day, wonderful memories,
+                amazing friends and unforgettable moments.
+                Come and celebrate with us!
+            </p>
+
+            <a href="#details" class="main-btn">
+                Explore The Party
+            </a>
+
+            <a href="#rsvp" class="second-btn">
+                RSVP Now
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900"
+                alt="Birthday party decorations">
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+
+        <div class="section-heading">
+            <p>ABOUT THE CELEBRATION</p>
+            <h2>Welcome To My Birthday Party</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800"
+                    alt="Birthday cake and decorations">
+            </div>
+
+            <div class="about-content">
+
+                <h3>A Day Full Of Happiness!</h3>
+
+                <p>
+                    Welcome to my special birthday celebration!
+                    This is a wonderful opportunity to celebrate
+                    another year of life with family and friends.
+                </p>
+
+                <p>
+                    We have prepared exciting activities, delicious
+                    food, beautiful decorations, music, dancing,
+                    games and many surprises.
+                </p>
+
+                <p>
+                    Your presence will make this special day
+                    more memorable. We look forward to celebrating
+                    with you!
+                </p>
+
+                <a href="#gallery" class="main-btn">
+                    View Our Gallery
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BIRTHDAY DETAILS -->
+    <section class="details section" id="details">
+
+        <div class="section-heading">
+            <p>PARTY INFORMATION</p>
+            <h2>Birthday Party Details</h2>
+        </div>
+
+        <div class="details-container">
+
+            <div class="detail-card">
+                <span>📅</span>
+                <h3>Party Date</h3>
+                <p>20 December 2026</p>
+            </div>
+
+            <div class="detail-card">
+                <span>⏰</span>
+                <h3>Party Time</h3>
+                <p>2:00 PM</p>
+            </div>
+
+            <div class="detail-card">
+                <span>📍</span>
+                <h3>Party Venue</h3>
+                <p>Grand Celebration Hall</p>
+            </div>
+
+            <div class="detail-card">
+                <span>👔</span>
+                <h3>Dress Code</h3>
+                <p>Colourful Outfits</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown section">
+
+        <div class="countdown-content">
+            <p>THE BIG DAY IS COMING!</p>
+
+            <h2>Countdown To The Celebration</h2>
+
+            <div class="timer-container">
+
+                <div class="timer-box">
+                    <h3 id="days">00</h3>
+                    <p>Days</p>
+                </div>
+
+                <div class="timer-box">
+                    <h3 id="hours">00</h3>
+                    <p>Hours</p>
+                </div>
+
+                <div class="timer-box">
+                    <h3 id="minutes">00</h3>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="timer-box">
+                    <h3 id="seconds">00</h3>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
+            <p id="countdown-message">
+                Get ready for an amazing celebration!
+            </p>
+
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery section" id="gallery">
+
+        <div class="section-heading">
+            <p>BEAUTIFUL MEMORIES</p>
+            <h2>Birthday Party Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=700"
+                     alt="Birthday cake">
+                <h3>Birthday Cake</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700"
+                     alt="Party balloons">
+                <h3>Party Decorations</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=700"
+                     alt="Party table">
+                <h3>Beautiful Party</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=700"
+                     alt="Celebration">
+                <h3>Special Moments</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=700"
+                     alt="Birthday celebration">
+                <h3>Celebration Time</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=700"
+                     alt="Party gathering">
+                <h3>Friends And Family</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACTIVITIES SECTION -->
+    <section class="activities section" id="activities">
+
+        <div class="section-heading">
+            <p>FUN AND ENTERTAINMENT</p>
+            <h2>Party Activities</h2>
+        </div>
+
+        <div class="activities-container">
+
+            <div class="activity-card">
+                <span>🎂</span>
+                <h3>Cake Cutting</h3>
+                <p>Enjoy the beautiful birthday cake together.</p>
+            </div>
+
+            <div class="activity-card">
+                <span>🎵</span>
+                <h3>Music And Dancing</h3>
+                <p>Enjoy amazing music and dance with friends.</p>
+            </div>
+
+            <div class="activity-card">
+                <span>🎮</span>
+                <h3>Fun Games</h3>
+                <p>Play exciting games and win special prizes.</p>
+            </div>
+
+            <div class="activity-card">
+                <span>📸</span>
+                <h3>Photo Session</h3>
+                <p>Take beautiful pictures and save memories.</p>
+            </div>
+
+            <div class="activity-card">
+                <span>🍕</span>
+                <h3>Food And Drinks</h3>
+                <p>Enjoy delicious food and refreshing drinks.</p>
+            </div>
+
+            <div class="activity-card">
+                <span>🎁</span>
+                <h3>Gift Presentation</h3>
+                <p>Share gifts and wonderful birthday wishes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BIRTHDAY MESSAGE SECTION -->
+    <section class="message section">
+
+        <div class="message-content">
+            <span>❤️</span>
+            <h2>A Special Birthday Message</h2>
+
+            <p>
+                Today is a special day filled with happiness,
+                love, hope and wonderful memories.
+                May this new year bring success, knowledge,
+                peace, joy and many beautiful opportunities.
+            </p>
+
+            <h3>Happy Birthday! 🎂</h3>
+        </div>
+
+    </section>
+
+    <!-- WISHES SECTION -->
+    <section class="wishes section" id="wishes">
+
+        <div class="section-heading">
+            <p>SHARE YOUR LOVE</p>
+            <h2>Send Birthday Wishes</h2>
+        </div>
+
+        <div class="wish-form">
+
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Enter your name">
+
+            <textarea
+                id="guestWish"
+                placeholder="Write your birthday wishes here..."></textarea>
+
+            <button onclick="sendWish()">
+                Send Birthday Wishes ❤️
+            </button>
+
+            <p id="wishResult"></p>
+
+        </div>
+
+        <div class="wish-list">
+            <h3>Birthday Wishes Board</h3>
+            <div id="wishBoard">
+                <p>Be the first to send a birthday wish!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section class="rsvp section" id="rsvp">
+
+        <div class="section-heading">
+            <p>JOIN THE CELEBRATION</p>
+            <h2>Confirm Your Attendance</h2>
+        </div>
+
+        <div class="rsvp-form">
+
+            <input
+                type="text"
+                id="rsvpName"
+                placeholder="Your full name">
+
+            <input
+                type="email"
+                id="rsvpEmail"
+                placeholder="Your email address">
+
+            <select id="attendance">
+                <option value="">Will you attend?</option>
+                <option value="Yes">Yes, I will attend</option>
+                <option value="No">Sorry, I cannot attend</option>
+            </select>
+
+            <button onclick="submitRSVP()">
+                Submit RSVP
+            </button>
+
+            <p id="rsvpResult"></p>
+
+        </div>
+
+    </section>
+
+    <!-- MUSIC SECTION -->
+    <section class="music section">
+
+        <div class="section-heading">
+            <p>ENJOY THE MUSIC</p>
+            <h2>Birthday Music Corner</h2>
+        </div>
+
+        <div class="music-box">
+
+            <span>🎵</span>
+
+            <h3>Let's Enjoy The Celebration!</h3>
+
+            <p>Play your favourite birthday music.</p>
+
+            <audio id="birthdayMusic" controls>
+                <source src="C:\Users\Okesanjo Students\Downloads\nastelbom-happy-birthday-495860 (1).mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <p class="music-note">
+                Add your own music file named birthday-music.mp3
+                to your project folder.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CELEBRATION BUTTON -->
+    <section class="celebration section">
+
+        <h2>Are You Ready To Celebrate?</h2>
+
+        <p>Let's make this birthday unforgettable!</p>
+
+        <button onclick="startCelebration()">
+            🎉 Celebrate Now 🎉
+        </button>
+
+        <h3 id="celebrationMessage"></h3>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section">
+
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Party Contact Information</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div>
+                <span>📞</span>
+                <h3>Phone</h3>
+                <p>+234 000 000 0000</p>
+            </div>
+
+            <div>
+                <span>📧</span>
+                <h3>Email</h3>
+                <p>birthday@example.com</p>
+            </div>
+
+            <div>
+                <span>📍</span>
+                <h3>Location</h3>
+                <p>Grand Celebration Hall</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h2>🎂 Birthday Party Celebration</h2>
+
+        <p>
+            Thank you for being part of our special day.
+            We hope to see you at the party!
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#rsvp">RSVP</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Birthday Party Website.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
 </html>
