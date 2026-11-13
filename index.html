@@ -1,330 +1,236 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant POP Decoration</title>
+    <title>My Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation -->
+    <!-- Header -->
     <header>
-        <nav class="navbar">
-            <h1 class="logo">Elegant POP</h1>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button class="menu-btn" id="menuBtn"
-                aria-label="Open navigation menu">☰</button>
-        </nav>
+        <div class="profile">
+            <h1>Build a Student Portfolio Page</h1>
+            <p>Student | Web Developer | Future Programmer</p>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="welcome">WELCOME TO ELEGANT POP</p>
-            <h2>Beautiful Ceilings, Beautiful Homes</h2>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="welcome">
+            <h2>Welcome to My Portfolio</h2>
             <p>
-                We create modern POP ceilings, stylish wall designs,
-                and beautiful interior decorations for homes and offices.
+                Hello! Welcome to my student portfolio website.
+                I am a student who enjoys learning technology,
+                coding, and creating websites.
             </p>
 
-            <a href="#services" class="btn">Explore Our Services</a>
-            <a href="#contact" class="btn btn-light">Contact Us</a>
-        </div>
-    </section>
+            <button>Explore My Work</button>
+        </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
-        <div class="about-image">
-            <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
-                alt="Beautiful modern living room interior">
-        </div>
-
-        <div class="about-text">
-            <p class="small-title">ABOUT OUR COMPANY</p>
-            <h2>We Make Your Space Look Special</h2>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
 
             <p>
-                Elegant POP Decoration provides creative ceiling designs
-                and interior decoration services for homes, offices,
-                shops, and other buildings.
+                My name is Ganiu Oluwatosin. I am a student and
+                I am interested in computer technology and web development.
             </p>
 
             <p>
-                Our goal is to help customers create attractive,
-                comfortable, and welcoming spaces. We pay attention
-                to design, finishing, and the needs of every customer.
+                I am currently learning HTML and CSS. I enjoy creating
+                websites and learning how different parts of a webpage
+                work together.
             </p>
 
-            <ul class="about-list">
-                <li>✔ Modern POP ceiling designs</li>
-                <li>✔ Creative wall decoration</li>
-                <li>✔ Professional finishing</li>
-                <li>✔ Designs based on your ideas</li>
-            </ul>
+            <p>
+                My goal is to become a professional programmer and
+                build useful websites and applications in the future.
+            </p>
+        </section>
 
-            <a href="#contact" class="btn">Discuss Your Project</a>
-        </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
 
-    <!-- Services Section -->
-    <section class="services section" id="services">
-        <div class="section-heading">
-            <p class="small-title">WHAT WE DO</p>
-            <h2>Our Professional Services</h2>
-            <p>Explore our decoration services for different spaces.</p>
-        </div>
+            <div class="skills-container">
 
-        <div class="service-container">
-
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-                    alt="Modern living room ceiling and interior">
-                <div class="card-content">
-                    <h3>POP Ceiling Design</h3>
+                <div class="skill">
+                    <h3>HTML</h3>
                     <p>
-                        We design stylish POP ceilings for living rooms,
-                        bedrooms, offices, and other indoor spaces.
+                        I use HTML to create the structure of webpages.
                     </p>
-                    <a href="#contact">Request Information →</a>
                 </div>
-            </article>
 
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
-                    alt="Modern home interior decoration">
-                <div class="card-content">
-                    <h3>Interior Decoration</h3>
+                <div class="skill">
+                    <h3>CSS</h3>
                     <p>
-                        We help plan beautiful interior spaces with
-                        suitable colours, lighting, and decoration.
+                        I use CSS to design and style webpages.
                     </p>
-                    <a href="#contact">Request Information →</a>
                 </div>
-            </article>
 
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
-                    alt="Stylish wall and room design">
-                <div class="card-content">
-                    <h3>Wall Decoration</h3>
+                <div class="skill">
+                    <h3>Web Design</h3>
                     <p>
-                        Add character to your home with decorative
-                        wall features and attractive finishing.
+                        I enjoy creating simple and attractive website layouts.
                     </p>
-                    <a href="#contact">Request Information →</a>
                 </div>
-            </article>
 
-        </div>
-    </section>
+                <div class="skill">
+                    <h3>Problem Solving</h3>
+                    <p>
+                        I enjoy solving coding problems and learning new things.
+                    </p>
+                </div>
 
-    <!-- Why Choose Us -->
-    <section class="why-us section">
-        <div class="section-heading">
-            <p class="small-title">WHY CHOOSE US?</p>
-            <h2>Our Commitment to Quality</h2>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <span>✦</span>
-                <h3>Creative Ideas</h3>
-                <p>We help you explore designs that match your space.</p>
             </div>
+        </section>
 
-            <div class="feature">
-                <span>✓</span>
-                <h3>Quality Finishing</h3>
-                <p>We focus on neat details and a professional finish.</p>
-            </div>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
 
-            <div class="feature">
-                <span>⌂</span>
-                <h3>Home and Office</h3>
-                <p>We provide design ideas for different types of spaces.</p>
-            </div>
+            <p>
+                Here are some of the projects I have worked on while
+                learning web development.
+            </p>
 
-            <div class="feature">
-                <span>♡</span>
-                <h3>Customer Care</h3>
-                <p>We listen to your needs before planning a project.</p>
-            </div>
-        </div>
-    </section>
+            <!-- Project 1 -->
+            <article class="project">
+                <h3>Project 1: Movie Website</h3>
 
-    <!-- Gallery Section -->
-    <section class="gallery section" id="gallery">
-        <div class="section-heading">
-            <p class="small-title">OUR INSPIRATION</p>
-            <h2>Explore Our Design Gallery</h2>
-            <p>Browse interior designs that can inspire your next project.</p>
-        </div>
-
-        <div class="gallery-container">
-            <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
-                alt="Elegant living room design">
-
-            <img
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
-                alt="Modern home interior">
-
-            <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80"
-                alt="Comfortable decorated room">
-
-            <img
-                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80"
-                alt="Contemporary living space">
-
-            <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-                alt="Bright modern interior">
-
-            <img
-                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
-                alt="Stylish home decoration">
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="call-to-action">
-        <h2>Ready to Improve Your Space?</h2>
-        <p>Tell us about your POP ceiling or interior decoration idea.</p>
-        <a href="#contact" class="btn btn-light">Start Your Project</a>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews section" id="reviews">
-        <div class="section-heading">
-            <p class="small-title">CUSTOMER FEEDBACK</p>
-            <h2>What Customers Say</h2>
-        </div>
-
-        <div class="review-container">
-            <article class="review-card">
-                <p class="stars">★★★★★</p>
                 <p>
-                    "I love the modern design ideas and the attention
-                    given to the details."
+                    I created a movie website using HTML and CSS.
+                    The website contains movie sections, movie titles,
+                    descriptions, and navigation links.
                 </p>
-                <h3>— Sample Customer 1</h3>
-            </article>
 
-            <article class="review-card">
-                <p class="stars">★★★★★</p>
                 <p>
-                    "The website made it easy to explore different
-                    interior decoration styles."
+                    This project helped me understand webpage structure,
+                    images, links, colors, and CSS styling.
                 </p>
-                <h3>— Sample Customer 2</h3>
+
+                <button>View Project</button>
             </article>
 
-            <article class="review-card">
-                <p class="stars">★★★★★</p>
+            <!-- Project 2 -->
+            <article class="project">
+                <h3>Project 2: Contact Form</h3>
+
                 <p>
-                    "There are many useful ideas here for planning
-                    a beautiful room."
+                    I created a contact form where visitors can enter
+                    their name, email address, subject, and message.
                 </p>
-                <h3>— Sample Customer 3</h3>
+
+                <p>
+                    This project helped me understand HTML forms,
+                    input fields, labels, buttons, and CSS design.
+                </p>
+
+                <button>View Project</button>
             </article>
-        </div>
-        <p class="demo-note">These are sample reviews for the website design.
-            Replace them with real customer feedback.</p>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-        <div class="section-heading">
-            <p class="small-title">GET IN TOUCH</p>
-            <h2>Contact Us About Your Project</h2>
-            <p>Complete the form and tell us what you have in mind.</p>
-        </div>
+            <!-- Project 3 -->
+            <article class="project">
+                <h3>Project 3: Event Announcement</h3>
 
-        <div class="contact-container">
+                <p>
+                    I created an event announcement webpage for a
+                    coding competition. It contains the event title,
+                    date, time, location, and other important information.
+                </p>
+
+                <p>
+                    This project helped me practise HTML sections,
+                    headings, paragraphs, and CSS layouts.
+                </p>
+
+                <button>View Project</button>
+            </article>
+
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Additional Information</h2>
+
+            <p>
+                <strong>My Interest:</strong> Coding and technology
+            </p>
+
+            <p>
+                <strong>My Favourite Subject:</strong> ICT
+            </p>
+
+            <p>
+                <strong>My Goal:</strong> Become a professional programmer
+            </p>
+
+            <p>
+                <strong>Currently Learning:</strong> HTML and CSS
+            </p>
+
+            <p>
+                I believe that regular practice and learning can help
+                me improve my programming skills.
+            </p>
+        </aside>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you would like to contact me, you can use the
+                information below.
+            </p>
+
             <div class="contact-info">
-                <h3>Let's Talk About Your Design</h3>
-                <p>
-                    Have a question about POP ceilings, wall decoration,
-                    or interior design? Send us a message.
-                </p>
-
-                <p><strong>Business:</strong> Elegant POP Decoration</p>
-                <p><strong>Services:</strong> Ceilings and Interiors</p>
-                <p><strong>Working hours:</strong> Monday – Saturday</p>
+                <p><strong>Name:</strong> Ganiu Ismoheel</p>
+                <p><strong>Email:</strong> ismoheelganiu@gmail.com</p>
+                <p><strong>Phone:</strong> 07079697332</p>
+                <p><strong>Location:</strong> Nigeria</p>
             </div>
 
-            <form id="contactForm">
-                <label for="name">Full Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
 
-                <label for="email">Email Address</label>
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
 
-                <label for="service">Service Needed</label>
-                <select id="service" required>
-                    <option value="">Choose a service</option>
-                    <option value="POP Ceiling">POP Ceiling</option>
-                    <option value="Interior Decoration">Interior Decoration</option>
-                    <option value="Wall Decoration">Wall Decoration</option>
-                    <option value="Other">Other</option>
-                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5"
+                    placeholder="Write your message"></textarea>
 
-                <label for="message">Your Message</label>
-                <textarea
-                    id="message"
-                    rows="5"
-                    placeholder="Describe your project"
-                    required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-                <p id="result" role="status" aria-live="polite"></p>
+                <button type="submit">Send Message</button>
             </form>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer>
-        <h2>Elegant POP Decoration</h2>
-        <p>Creative designs for beautiful spaces.</p>
+        <h3>Ganiu Ismoheel</h3>
 
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <p>
+            Student | Web Developer | Future Programmer
+        </p>
 
-        <p>© <span id="year"></span> Elegant POP Decoration.
-            All rights reserved.</p>
-        <p>Website created with HTML, CSS, and JavaScript.</p>
+        <p>
+            &copy; 2026 My Student Portfolio. All Rights Reserved.
+        </p>
     </footer>
-
 </body>
 </html>
-```
