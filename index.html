@@ -1,23 +1,589 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My self </title><link rel="stylesheet" href="style.css">
+    <title>Royal Stitch Tailors | Men's Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>About my self</h1>
-    <p>My name is Ganiu Ismoheel. I ma a students leaning coding. </p>
-    <img src="profile.jpg" alt="My photo"width="200">
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Reading</li>
-        <li>coding</li>
-        <li>Football</li>
-    </ul>
-    <h2>contact Me</h2>
-    <p>Email:ismoheelganiu@gmail.com</p>
-    <a href="https\\www.facebook.com"> visit My facebook page </a>
-    
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                Royal<span>Stitch.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-button">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-heading">WELCOME TO ROYAL STITCH</p>
+
+            <h1>Style That Fits.<br>
+                Confidence That Lasts.</h1>
+
+            <p class="hero-text">
+                Discover the art of perfect fitting with our
+                premium men's tailoring services. We create
+                stylish outfits for every special occasion.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#collection" class="btn primary-btn">
+                    Explore Collection
+                </a>
+
+                <a href="#contact" class="btn outline-btn">
+                    Book a Fitting
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+                <div>
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+
+                <div>
+                    <h3>100%</h3>
+                    <p>Style & Care</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=900&q=85"
+                alt="Elegant men's formal suit">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=850&q=85"
+                alt="Men's fashion and formal tailoring">
+        </div>
+
+        <div class="about-content">
+            <p class="section-label">ABOUT OUR SHOP</p>
+
+            <h2>We Make Your Style Stand Out</h2>
+
+            <p>
+                At Royal Stitch Tailors, we believe every man
+                deserves clothing that makes him feel confident.
+                Our team combines traditional tailoring skills
+                with modern fashion.
+            </p>
+
+            <p>
+                Whether you need a business suit, native wear,
+                wedding outfit, or casual clothing, we pay
+                attention to every detail to give you a great fit.
+            </p>
+
+            <ul class="about-list">
+                <li>✓ Quality fabrics and materials</li>
+                <li>✓ Professional measurements</li>
+                <li>✓ Modern and traditional designs</li>
+                <li>✓ Friendly customer service</li>
+            </ul>
+
+            <a href="#contact" class="btn primary-btn">
+                Contact Our Tailor
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Our Tailoring Services</h2>
+            <p>Professional tailoring for every man's wardrobe.</p>
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <div class="service-icon">🤵</div>
+                <h3>Suit Making</h3>
+                <p>
+                    Custom-made suits for business meetings,
+                    weddings, celebrations, and formal events.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🧵</div>
+                <h3>Native Wear</h3>
+                <p>
+                    Beautifully tailored Agbada, senator styles,
+                    kaftans, and other traditional outfits.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">👔</div>
+                <h3>Shirt Making</h3>
+                <p>
+                    Custom shirts made to match your size,
+                    preferred fabric, and personal style.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3>Clothing Alterations</h3>
+                <p>
+                    Adjust the length, sleeves, waist, and fit
+                    of your existing clothes.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">💍</div>
+                <h3>Wedding Outfits</h3>
+                <p>
+                    Special outfits for grooms, groomsmen,
+                    engagements, and celebrations.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">👖</div>
+                <h3>Trousers</h3>
+                <p>
+                    Smart trousers designed for comfort,
+                    a neat fit, and everyday elegance.
+                </p>
+                <a href="#contact">Book Service →</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection section" id="collection">
+        <div class="section-heading">
+            <p class="section-label">OUR LATEST DESIGNS</p>
+            <h2>Explore Our Collection</h2>
+            <p>Choose a style that matches your personality.</p>
+        </div>
+
+        <div class="collection-grid">
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=700&q=85"
+                    alt="Classic men's suit">
+                <div class="product-info">
+                    <span class="product-category">FORMAL WEAR</span>
+                    <h3>Classic Business Suit</h3>
+                    <p>Smart, elegant, and professional.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦85,000</span>
+                        <button class="order-btn"
+                            data-product="Classic Business Suit">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=85"
+                    alt="Men's traditional fashion inspiration">
+                <div class="product-info">
+                    <span class="product-category">TRADITIONAL</span>
+                    <h3>Senator Outfit</h3>
+                    <p>A refined look for special occasions.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦45,000</span>
+                        <button class="order-btn"
+                            data-product="Senator Outfit">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=85"
+                    alt="Men's smart dress shirt">
+                <div class="product-info">
+                    <span class="product-category">CASUAL WEAR</span>
+                    <h3>Premium Dress Shirt</h3>
+                    <p>Comfortable style for everyday wear.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦18,000</span>
+                        <button class="order-btn"
+                            data-product="Premium Dress Shirt">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=85"
+                    alt="Man wearing a formal jacket">
+                <div class="product-info">
+                    <span class="product-category">SPECIAL EVENTS</span>
+                    <h3>Wedding Suit</h3>
+                    <p>A polished look for your big day.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦120,000</span>
+                        <button class="order-btn"
+                            data-product="Wedding Suit">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=85"
+                    alt="Men's stylish outerwear">
+                <div class="product-info">
+                    <span class="product-category">SMART STYLE</span>
+                    <h3>Modern Jacket</h3>
+                    <p>Contemporary fashion for a smart look.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦35,000</span>
+                        <button class="order-btn"
+                            data-product="Modern Jacket">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=85"
+                    alt="Men's elegant traditional outfit inspiration">
+                <div class="product-info">
+                    <span class="product-category">PREMIUM WEAR</span>
+                    <h3>Special Occasion Outfit</h3>
+                    <p>Custom styling for memorable occasions.</p>
+                    <div class="product-bottom">
+                        <span class="price">₦65,000</span>
+                        <button class="order-btn"
+                            data-product="Special Occasion Outfit">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section">
+        <div class="section-heading">
+            <p class="section-label">WHY ROYAL STITCH?</p>
+            <h2>Quality You Can Trust</h2>
+        </div>
+
+        <div class="benefit-grid">
+            <div class="benefit">
+                <span>✂️</span>
+                <h3>Perfect Measurements</h3>
+                <p>We take careful measurements for a comfortable fit.</p>
+            </div>
+
+            <div class="benefit">
+                <span>🧵</span>
+                <h3>Quality Workmanship</h3>
+                <p>We pay attention to stitching and finishing details.</p>
+            </div>
+
+            <div class="benefit">
+                <span>⏰</span>
+                <h3>Reliable Service</h3>
+                <p>We agree on a collection date for each order.</p>
+            </div>
+
+            <div class="benefit">
+                <span>⭐</span>
+                <h3>Personal Style</h3>
+                <p>We help you choose designs that suit your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+        <div class="section-heading">
+            <p class="section-label">OUR PRICES</p>
+            <h2>Tailoring Packages</h2>
+            <p>Sample prices for our different tailoring services.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <article class="pricing-card">
+                <h3>Basic</h3>
+                <p class="package-description">For everyday clothing</p>
+                <h2>₦15,000<span>/from</span></h2>
+                <ul>
+                    <li>✓ Basic shirt tailoring</li>
+                    <li>✓ Simple trouser adjustments</li>
+                    <li>✓ Standard fitting</li>
+                    <li>✓ Fabric advice</li>
+                </ul>
+                <a href="#contact" class="btn outline-dark">
+                    Choose Basic
+                </a>
+            </article>
+
+            <article class="pricing-card featured">
+                <span class="popular-label">POPULAR</span>
+                <h3>Premium</h3>
+                <p class="package-description">For a smart wardrobe</p>
+                <h2>₦45,000<span>/from</span></h2>
+                <ul>
+                    <li>✓ Custom senator outfit</li>
+                    <li>✓ Personal measurements</li>
+                    <li>✓ Design consultation</li>
+                    <li>✓ Fitting adjustments</li>
+                </ul>
+                <a href="#contact" class="btn primary-btn">
+                    Choose Premium
+                </a>
+            </article>
+
+            <article class="pricing-card">
+                <h3>Luxury</h3>
+                <p class="package-description">For special occasions</p>
+                <h2>₦85,000<span>/from</span></h2>
+                <ul>
+                    <li>✓ Custom suit design</li>
+                    <li>✓ Detailed fitting session</li>
+                    <li>✓ Premium fabric options</li>
+                    <li>✓ Finishing adjustments</li>
+                </ul>
+                <a href="#contact" class="btn outline-dark">
+                    Choose Luxury
+                </a>
+            </article>
+
+        </div>
+
+        <p class="price-note">
+            Prices are examples for this website project. Actual prices
+            depend on fabric, design, and the work required.
+        </p>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment section" id="contact">
+        <div class="appointment-info">
+            <p class="section-label">LET'S CREATE YOUR STYLE</p>
+            <h2>Book Your Appointment</h2>
+            <p>
+                Tell us what you need. Fill out the form to request
+                a fitting or discuss your next outfit.
+            </p>
+
+            <div class="contact-detail">
+                <span>📍</span>
+                <div>
+                    <h3>Our Location</h3>
+                    <p>Enter your shop address here, Lagos, Nigeria</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <span>📞</span>
+                <div>
+                    <h3>Phone Number</h3>
+                    <p>+234 800 000 0000</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <span>✉️</span>
+                <div>
+                    <h3>Email Address</h3>
+                    <p>hello@royalstitch.example</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="appointment-form" id="appointmentForm">
+            <h3>Request an Appointment</h3>
+
+            <label for="fullName">Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label for="service">Choose a Service</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Suit Making">Suit Making</option>
+                <option value="Native Wear">Native Wear</option>
+                <option value="Shirt Making">Shirt Making</option>
+                <option value="Alterations">Clothing Alterations</option>
+                <option value="Wedding Outfit">Wedding Outfit</option>
+                <option value="Trousers">Trousers</option>
+            </select>
+
+            <label for="appointmentDate">Preferred Date</label>
+            <input
+                type="date"
+                id="appointmentDate"
+                name="appointmentDate"
+                required>
+
+            <label for="message">Additional Details</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Describe your preferred style..."></textarea>
+
+            <button type="submit" class="btn primary-btn submit-btn">
+                Request Appointment
+            </button>
+
+            <p id="formMessage" class="form-message" role="status"
+               aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div>
+            <h2>Stay Stylish With Royal Stitch</h2>
+            <p>Get updates about our latest designs and services.</p>
+        </div>
+
+        <form id="newsletterForm" class="newsletter-form">
+            <label class="visually-hidden" for="newsletterEmail">
+                Your email address
+            </label>
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email address"
+                required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="newsletterMessage" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <a href="#home" class="logo footer-logo">
+                    Royal<span>Stitch.</span>
+                </a>
+                <p>
+                    Quality men's tailoring designed around
+                    your style, comfort, and confidence.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#collection">Collection</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <a href="#services">Suit Making</a>
+                <a href="#services">Native Wear</a>
+                <a href="#services">Shirt Making</a>
+                <a href="#services">Alterations</a>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <p>Connect with us on social media.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/"
+                       target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/"
+                       target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Royal Stitch Tailors.
+                All rights reserved.
+            </p>
+            <a href="#home">Back to Top ↑</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
