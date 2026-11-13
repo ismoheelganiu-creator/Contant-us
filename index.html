@@ -4,444 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Stitch Tailors | Men's Fashion</title>
+    <title>YouTube - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <img>
-
-        <nav class="navbar">
-            <a href="#home" class="logo">♛ ROYAL <span>STITCH</span>
-                <small>MEN'S TAILORS</small>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="left-section">
+            <button id="menuBtn" class="icon-btn" aria-label="Toggle sidebar">☰</button>
+            <a href="#" class="logo">
+                <span class="youtube-icon">▶</span>
+                <span>YouTube</span>
+                <sup>NG</sup>
             </a>
-            <button class="menu-btn" id="menuBtn"
-                aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Collection</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact" class="nav-cta">Book a Fitting</a></li>
-            </ul>
-        </nav>
+        <form class="search-box" id="searchForm">
+            <input type="search" id="searchInput"
+                   placeholder="Search videos..." aria-label="Search videos">
+            <button type="submit" aria-label="Search">🔍</button>
+        </form>
+
+        <button class="create-btn" id="createBtn">＋ Create</button>
     </header>
 
-    <!-- Hero -->
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">BESPOKE TAILORING / FINE FABRICS</p>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <a href="#" class="side-link active" data-category="All">🏠 Home</a>
+        <a href="#" class="side-link" data-category="Music">🎵 Music</a>
+        <a href="#" class="side-link" data-category="Gaming">🎮 Gaming</a>
+        <a href="#" class="side-link" data-category="Education">📚 Learning</a>
+        <a href="#" class="side-link" data-category="Football">⚽ Football</a>
+        <hr>
+        <h3>You</h3>
+        <a href="#" class="side-link" data-category="All">▶ Your videos</a>
+        <a href="#" class="side-link" data-category="All">🕘 History</a>
+        <a href="#" class="side-link" data-category="All">👍 Liked videos</a>
+        <hr>
+        <p class="sidebar-note">Explore videos, learn new skills, and enjoy your day!</p>
+    </aside>
 
-                <h1>Style That Fits.<br>
-                    <span>Confidence That Lasts.</span>
-                </h1>
+    <!-- Main Content -->
+    <main class="main-content">
 
-                <p class="hero-description">
-                    Premium men's tailoring for the modern gentleman.
-                    Discover elegant suits, traditional Nigerian outfits,
-                    and custom-made clothing designed around your style.
-                </p>
+        <!-- Category Buttons -->
+        <nav class="categories" aria-label="Video categories">
+            <button class="category active" data-category="All">All</button>
+            <button class="category" data-category="Music">Music</button>
+            <button class="category" data-category="Gaming">Gaming</button>
+            <button class="category" data-category="Education">Education</button>
+            <button class="category" data-category="Football">Football</button>
+            <button class="category" data-category="Coding">Coding</button>
+            <button class="category" data-category="Comedy">Comedy</button>
+        </nav>
 
-                <a href="#contact" class="btn gold-btn">
-                    Book a Fitting <span>→</span>
-                </a>
+        <section class="video-section">
+            <h1>Recommended videos</h1>
+            <p id="resultMessage" class="result-message">Discover something interesting today.</p>
 
-                <div class="hero-numbers">
-                    <div>
-                        <h3>10+</h3>
-                        <p>Years of Craft</p>
-                    </div>
-                    <div>
-                        <h3>500+</h3>
-                        <p>Happy Customers</p>
-                    </div>
-                    <div>
-                        <h3>100%</h3>
-                        <p>Personal Style</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="video-grid" id="videoGrid">
 
-        <!-- Featured Collections -->
-        <section class="collections section" id="gallery">
-            <div class="section-heading">
-                <p class="eyebrow">THE COLLECTION</p>
-                <h2>Dress Like You Mean It</h2>
-                <p>Discover timeless designs made for every occasion.</p>
-            </div>
-
-            <div class="collection-grid">
-                <article class="collection-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85"
-                        alt="Man wearing a tailored formal suit">
-                    <div class="collection-overlay">
-                        <h3>Men's Suits</h3>
-                        <p>Sharp. Elegant. Always.</p>
-                        <a href="#contact">Explore Collection →</a>
+                <article class="video-card" data-category="Music"
+                    data-title="Relaxing Music for a Peaceful Day"
+                    data-channel="Relaxing Sounds" data-views="1.2M views"
+                    data-time="2 days ago"
+                    data-image="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=640"
+                    alt="Singer performing on stage">
+                    <div class="video-info">
+                        <div class="channel-avatar">🎵</div>
+                        <div>
+                            <h2>Relaxing Music for a Peaceful Day</h2>
+                            <p>Relaxing Sounds</p>
+                            <p>1.2M views · 2 days ago</p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="collection-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=85"
-                        alt="Men's formal fashion inspiration">
-                    <div class="collection-overlay">
-                        <h3>Traditional Wear</h3>
-                        <p>Heritage. Style. You.</p>
-                        <a href="#contact">Explore Collection →</a>
+                <article class="video-card" data-category="Coding"
+                    data-title="Learn HTML and CSS for Beginners"
+                    data-channel="Code Academy" data-views="250K views"
+                    data-time="1 week ago"
+                    data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640"
+                    alt="Computer setup for coding">
+                    <div class="video-info">
+                        <div class="channel-avatar">💻</div>
+                        <div>
+                            <h2>Learn HTML and CSS for Beginners</h2>
+                            <p>Code Academy</p>
+                            <p>250K views · 1 week ago</p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="collection-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85"
-                        alt="Elegant men's dress shirt">
-                    <div class="collection-overlay">
-                        <h3>Dress Shirts</h3>
-                        <p>Crisp. Comfortable. Classy.</p>
-                        <a href="#contact">Explore Collection →</a>
+                <article class="video-card" data-category="Football"
+                    data-title="Amazing Football Skills and Goals"
+                    data-channel="Football World" data-views="890K views"
+                    data-time="3 days ago"
+                    data-image="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=640"
+                    alt="Football stadium and pitch">
+                    <div class="video-info">
+                        <div class="channel-avatar">⚽</div>
+                        <div>
+                            <h2>Amazing Football Skills and Goals</h2>
+                            <p>Football World</p>
+                            <p>890K views · 3 days ago</p>
+                        </div>
                     </div>
                 </article>
-            </div>
-        </section>
 
-        <!-- About -->
-        <section class="about section" id="about">
-            <div class="about-image">
-                <img
-                    src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=900&q=85"
-                    alt="Elegant tailoring and menswear">
-            </div>
-
-            <div class="about-text">
-                <p class="eyebrow">OUR STORY</p>
-                <h2>Craftsmanship in Every Stitch</h2>
-
-                <p>
-                    At Royal Stitch Tailors, we believe clothing should
-                    reflect confidence, character, and individuality.
-                </p>
-
-                <p>
-                    We combine careful measurements, quality fabrics,
-                    and detailed finishing to create outfits for business,
-                    weddings, celebrations, and everyday life.
-                </p>
-
-                <ul class="check-list">
-                    <li>✓ Personal design consultation</li>
-                    <li>✓ Carefully measured garments</li>
-                    <li>✓ Modern and traditional styles</li>
-                    <li>✓ Attention to every detail</li>
-                </ul>
-
-                <a href="#services" class="btn dark-btn">Discover Our Services</a>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="services section" id="services">
-            <div class="section-heading">
-                <p class="eyebrow">WHAT WE OFFER</p>
-                <h2>Our Tailoring Services</h2>
-                <p>Made with care, designed around you.</p>
-            </div>
-
-            <div class="services-grid">
-                <article class="service-card">
-                    <span class="service-icon">🤵</span>
-                    <h3>Bespoke Suits</h3>
-                    <p>Custom suits for work, weddings, and special events.</p>
-                    <a href="#contact">Make an Enquiry →</a>
+                <article class="video-card" data-category="Gaming"
+                    data-title="Top Gaming Moments"
+                    data-channel="Game Zone" data-views="540K views"
+                    data-time="5 days ago"
+                    data-image="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=640"
+                    alt="Gaming competition">
+                    <div class="video-info">
+                        <div class="channel-avatar">🎮</div>
+                        <div>
+                            <h2>Top Gaming Moments</h2>
+                            <p>Game Zone</p>
+                            <p>540K views · 5 days ago</p>
+                        </div>
+                    </div>
                 </article>
 
-                <article class="service-card">
-                    <span class="service-icon">🧵</span>
-                    <h3>Native Outfits</h3>
-                    <p>Agbada, senator styles, kaftans, and traditional wear.</p>
-                    <a href="#contact">Make an Enquiry →</a>
+                <article class="video-card" data-category="Education"
+                    data-title="How to Study and Learn Faster"
+                    data-channel="Smart Learning" data-views="320K views"
+                    data-time="4 days ago"
+                    data-image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=640"
+                    alt="Books and study notes">
+                    <div class="video-info">
+                        <div class="channel-avatar">📚</div>
+                        <div>
+                            <h2>How to Study and Learn Faster</h2>
+                            <p>Smart Learning</p>
+                            <p>320K views · 4 days ago</p>
+                        </div>
+                    </div>
                 </article>
 
-                <article class="service-card">
-                    <span class="service-icon">👔</span>
-                    <h3>Shirt Making</h3>
-                    <p>Custom shirts with your preferred fabric and design.</p>
-                    <a href="#contact">Make an Enquiry →</a>
+                <article class="video-card" data-category="Comedy"
+                    data-title="Funny Moments with Friends"
+                    data-channel="Happy Time" data-views="2M views"
+                    data-time="6 days ago"
+                    data-image="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=640">
+                    <img class="thumbnail"
+                    src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=640"
+                    alt="Friends enjoying a celebration">
+                    <div class="video-info">
+                        <div class="channel-avatar">😂</div>
+                        <div>
+                            <h2>Funny Moments with Friends</h2>
+                            <p>Happy Time</p>
+                            <p>2M views · 6 days ago</p>
+                        </div>
+                    </div>
                 </article>
 
-                <article class="service-card">
-                    <span class="service-icon">✂️</span>
-                    <h3>Alterations</h3>
-                    <p>Adjust your existing clothes for a better fit.</p>
-                    <a href="#contact">Make an Enquiry →</a>
-                </article>
-
-                <article class="service-card">
-                    <span class="service-icon">💍</span>
-                    <h3>Wedding Fashion</h3>
-                    <p>Special outfits for grooms and wedding celebrations.</p>
-                    <a href="#contact">Make an Enquiry →</a>
-                </article>
-
-                <article class="service-card">
-                    <span class="service-icon">👖</span>
-                    <h3>Trousers</h3>
-                    <p>Smart trousers tailored to your preferred style.</p>
-                    <a href="#contact">Make an Enquiry →</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- Our Process -->
-        <section class="process section">
-            <div class="section-heading">
-                <p class="eyebrow">SIMPLE AND PERSONAL</p>
-                <h2>How It Works</h2>
-                <p>Your next outfit starts with four simple steps.</p>
             </div>
 
-            <div class="process-grid">
-                <article>
-                    <span>01</span>
-                    <h3>Choose Your Style</h3>
-                    <p>Select an outfit, fabric, and design you love.</p>
-                </article>
-
-                <article>
-                    <span>02</span>
-                    <h3>Take Measurements</h3>
-                    <p>We record your measurements for your garment.</p>
-                </article>
-
-                <article>
-                    <span>03</span>
-                    <h3>Tailoring Begins</h3>
-                    <p>Your outfit is cut, stitched, and carefully finished.</p>
-                </article>
-
-                <article>
-                    <span>04</span>
-                    <h3>Final Fitting</h3>
-                    <p>Check the fit and discuss any needed adjustments.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Price List -->
-        <section class="pricing section">
-            <div class="section-heading">
-                <p class="eyebrow">SAMPLE PRICE GUIDE</p>
-                <h2>Choose Your Style</h2>
-                <p>Starting prices for this website demonstration.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <article class="price-card">
-                    <h3>Dress Shirt</h3>
-                    <p class="price">₦18,000</p>
-                    <p>Custom shirt design</p>
-                    <p>Personal measurements</p>
-                    <p>Choice of fabric</p>
-                    <a href="#contact" class="btn dark-btn">Enquire Now</a>
-                </article>
-
-                <article class="price-card highlighted">
-                    <span class="popular">POPULAR</span>
-                    <h3>Senator Outfit</h3>
-                    <p class="price">₦45,000</p>
-                    <p>Traditional outfit design</p>
-                    <p>Personal measurements</p>
-                    <p>Fitting adjustments</p>
-                    <a href="#contact" class="btn gold-btn">Enquire Now</a>
-                </article>
-
-                <article class="price-card">
-                    <h3>Custom Suit</h3>
-                    <p class="price">₦85,000</p>
-                    <p>Formal suit tailoring</p>
-                    <p>Design consultation</p>
-                    <p>Final fitting</p>
-                    <a href="#contact" class="btn dark-btn">Enquire Now</a>
-                </article>
-            </div>
-
-            <p class="price-note">
-                Prices are examples only. Update them to match your actual
-                fabric, design, and tailoring costs.
+            <p id="emptyMessage" class="empty-message" hidden>
+                No videos found. Try another search.
             </p>
         </section>
 
-        <!-- Testimonials -->
-        <section class="testimonials section">
-            <div class="section-heading">
-                <p class="eyebrow">CUSTOMER EXPERIENCE</p>
-                <h2>Style Made Personal</h2>
-                <p>Example testimonial cards for your project design.</p>
-            </div>
-
-            <div class="testimonial-grid">
-                <article class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <blockquote>
-                        "The design and attention to detail are exactly
-                        what I wanted. My outfit feels personal."
-                    </blockquote>
-                    <h3>Sample Customer One</h3>
-                    <p>Custom Suit</p>
-                </article>
-
-                <article class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <blockquote>
-                        "I love the traditional style and the care put
-                        into every part of the outfit."
-                    </blockquote>
-                    <h3>Sample Customer Two</h3>
-                    <p>Traditional Wear</p>
-                </article>
-
-                <article class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <blockquote>
-                        "The process was simple, and I could explain
-                        the design I wanted."
-                    </blockquote>
-                    <h3>Sample Customer Three</h3>
-                    <p>Dress Shirt</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Contact and Booking -->
-        <section class="contact section" id="contact">
-            <div class="contact-info">
-                <p class="eyebrow">LET'S CREATE SOMETHING GREAT</p>
-                <h2>Book Your Fitting</h2>
-                <p>
-                    Tell us about your preferred outfit and request
-                    an appointment with Royal Stitch Tailors.
-                </p>
-
-                <div class="contact-item">
-                    <span>📍</span>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Your shop address, Lagos, Nigeria</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <span>📞</span>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+234 800 000 0000</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <span>✉️</span>
-                    <div>
-                        <h3>Email</h3>
-                        <p>hello@royalstitch.example</p>
-                    </div>
-                </div>
-            </div>
-
-            <form class="booking-form" id="bookingForm">
-                <h3>Appointment Request</h3>
-
-                <label for="name">Full Name</label>
-                <input id="name" name="name" type="text"
-                    placeholder="Enter your name" required>
-
-                <label for="email">Email Address</label>
-                <input id="email" name="email" type="email"
-                    placeholder="Enter your email" required>
-
-                <label for="phone">Phone Number</label>
-                <input id="phone" name="phone" type="tel"
-                    placeholder="Enter your phone number" required>
-
-                <label for="service">Choose a Service</label>
-                <select id="service" name="service" required>
-                    <option value="">Select a service</option>
-                    <option>Bespoke Suit</option>
-                    <option>Traditional Wear</option>
-                    <option>Dress Shirt</option>
-                    <option>Alterations</option>
-                    <option>Wedding Outfit</option>
-                    <option>Trousers</option>
-                </select>
-
-                <label for="date">Preferred Date</label>
-                <input id="date" name="date" type="date" required>
-
-                <label for="details">Tell Us More</label>
-                <textarea id="details" name="details" rows="4"
-                    placeholder="Describe your preferred outfit"></textarea>
-
-                <button class="btn gold-btn submit-btn" type="submit">
-                    Send Appointment Request →
-                </button>
-
-                <p id="formMessage" role="status" aria-live="polite"></p>
-            </form>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="final-cta">
-            <p class="eyebrow">YOUR STYLE. YOUR STORY.</p>
-            <h2>A Great Outfit Starts Here.</h2>
-            <p>Let's create something made just for you.</p>
-            <a href="#contact" class="btn gold-btn">Book Your Fitting →</a>
-        </section>
+        <footer class="footer">
+            <p>My YouTube Website · Built with HTML, CSS and JavaScript</p>
+            <p>This is a learning project, not the official YouTube website.</p>
+        </footer>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div>
-                <a href="#home" class="logo">ROYAL <span>STITCH</span></a>
-                <p>Premium men's tailoring and personal style.</p>
-            </div>
-
-            <div>
-                <h3>Quick Links</h3>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Collection</a>
-            </div>
-
-            <div>
-                <h3>Our Services</h3>
-                <a href="#services">Custom Suits</a>
-                <a href="#services">Native Wear</a>
-                <a href="#services">Shirt Making</a>
-                <a href="#services">Alterations</a>
-            </div>
-
-            <div>
-                <h3>Social Media</h3>
-                <a href="https://www.instagram.com/"
-                   target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.facebook.com/"
-                   target="_blank" rel="noopener noreferrer">Facebook</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Royal Stitch Tailors.</p>
-            <a href="#home">Back to Top ↑</a>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>

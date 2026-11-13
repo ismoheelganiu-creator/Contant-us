@@ -1,91 +1,130 @@
 
-/* MOBILE MENU */
+// SELECT HTML ELEMENTS
+const searchForm = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+const videoCards = document.querySelectorAll(".video-card");
+const categoryButtons = document.querySelectorAll(".category");
+const sideLinks = document.querySelectorAll(".side-link");
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const createBtn = document.getElementById("createBtn");
+const resultMessage = document.getElementById("resultMessage");
+const emptyMessage = document.getElementById("emptyMessage");
+const videoGrid = document.getElementById("videoGrid");
 
-menuBtn.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("active");
+let selectedCategory = "All";
 
-    menuBtn.textContent = isOpen ? "✕" : "☰";
-    menuBtn.setAttribute("aria-expanded", isOpen);
-    menuBtn.setAttribute(
-        "aria-label",
-        isOpen ? "Close menu" : "Open menu"
+// SEARCH AND FILTER VIDEOS
+function filterVideos() {
+    const searchText = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    videoCards.forEach(function(card) {
+        const title = card.dataset.title.toLowerCase();
+        const channel = card.dataset.channel.toLowerCase();
+        const category = card.dataset.category;
+
+        const matchesSearch =
+            title.includes(searchText) ||
+            channel.includes(searchText);
+
+        const matchesCategory =
+            selectedCategory === "All" ||
+            category === selectedCategory;
+
+        if (matchesSearch && matchesCategory) {
+            card.style.display = "";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    emptyMessage.hidden = visibleCount !== 0;
+
+    resultMessage.textContent =
+        visibleCount + (visibleCount === 1
+        ? " video found."
+        : " videos found.");
+}
+
+// SEARCH WHEN THE USER TYPES
+searchInput.addEventListener("input", filterVideos);
+
+// PREVENT THE FORM FROM RELOADING THE PAGE
+searchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    filterVideos();
+});
+
+// SELECT A CATEGORY
+function selectCategory(category) {
+    selectedCategory = category;
+
+    categoryButtons.forEach(function(button) {
+        button.classList.toggle(
+            "active",
+            button.dataset.category === category
+        );
+    });
+
+    sideLinks.forEach(function(link) {
+        link.classList.toggle(
+            "active",
+            link.dataset.category === category &&
+            link.textContent.includes(
+                category === "All" ? "Home" : category
+            )
+        );
+    });
+
+    filterVideos();
+}
+
+// CATEGORY BUTTON EVENTS
+categoryButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        selectCategory(button.dataset.category);
+    });
+});
+
+// SIDEBAR CATEGORY EVENTS
+sideLinks.forEach(function(link) {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        selectCategory(link.dataset.category);
+    });
+});
+
+// SHOW OR HIDE THE SIDEBAR
+menuBtn.addEventListener("click", function() {
+    document.body.classList.toggle("sidebar-hidden");
+});
+
+// CLICK A VIDEO TO SEARCH FOR IT ON YOUTUBE
+videoCards.forEach(function(card) {
+    card.addEventListener("click", function() {
+        const title = card.dataset.title;
+        const channel = card.dataset.channel;
+
+        const query = encodeURIComponent(
+            title + " " + channel
+        );
+
+        window.open(
+            "https://www.youtube.com/results?search_query=" + query,
+            "_blank",
+            "noopener,noreferrer"
+        );
+    });
+});
+
+// CREATE BUTTON
+createBtn.addEventListener("click", function() {
+    alert(
+        "Welcome to your YouTube-style project! " +
+        "Uploading videos requires a backend and a video hosting service."
     );
 });
 
-/* CLOSE MENU AFTER CLICKING A LINK */
-document.querySelectorAll(".nav-links a").forEach(function (link) {
-    link.addEventListener("click", function () {
-        navLinks.classList.remove("active");
-        menuBtn.textContent = "☰";
-        menuBtn.setAttribute("aria-expanded", "false");
-    });
-});
-
-/* SET THE MINIMUM APPOINTMENT DATE */
-const dateInput = document.getElementById("date");
-
-function getLocalDate() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-    const day = String(now.getDate()).padStart(2, "0");
-
-    return `${year}-${month}-${day}`;
-}
-
-dateInput.min = getLocalDate();
-
-/* APPOINTMENT FORM */
-const bookingForm = document.getElementById("bookingForm");
-const formMessage = document.getElementById("formMessage");
-
-bookingForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const service = document.getElementById("service").value;
-    const date = dateInput.value;
-
-    if (!name || !email || !phone || !service || !date) {
-        formMessage.textContent =
-            "Please complete all the required fields.";
-        formMessage.style.color = "#b42318";
-        return;
-    }
-
-    if (date < getLocalDate()) {
-        formMessage.textContent =
-            "Please choose today or a future date.";
-        formMessage.style.color = "#b42318";
-        return;
-    }
-
-    formMessage.textContent =
-        `Thank you, ${name}! Your request for ${service} on ${date} ` +
-        "has been prepared. This is a demo; the shop has not received it.";
-
-    formMessage.style.color = "#287a3e";
-
-    // Demonstration only: no information is sent to a server.
-    console.log("Demo appointment:", {
-        name: name,
-        email: email,
-        phone: phone,
-        service: service,
-        date: date
-    });
-
-    bookingForm.reset();
-    dateInput.min = getLocalDate();
-});
-
-/* AUTOMATIC COPYRIGHT YEAR */
-document.getElementById("year").textContent =
-    new Date().getFullYear();
-
-/* WEBSITE STARTUP MESSAGE */
-console.log("Welcome to Royal Stitch Tailors!");
+// DISPLAY THE INITIAL VIDEO COUNT
+filterVideos();
