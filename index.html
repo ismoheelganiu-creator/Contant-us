@@ -1,31 +1,320 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Competition</title>
+    <title>ICT Club Meeting Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="event-card">
-        <h1> Coding Competition</h1>
 
-        <h2>Organized by Ismoheel</h2>
+    <!-- School Header -->
+    <header id="home">
+        <h1>OCECS DIGITAL LEARNING CENTRE</h1>
+        <p>Information and Communication Technology Club</p>
+        <p>Learning Technology, Building the Future</p>
 
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#minutes">Minutes</a>
+            <a href="#tasks">Responsibilities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to the ICT Club Meeting</h2>
         <p>
-            Welcome to our exciting Coding Competition!
-            Come and test your coding skills, solve problems,
-            and learn new things.
+            Welcome to our school ICT Club meeting webpage.
+            This page contains the meeting agenda, minutes,
+            project plans, and responsibilities assigned
+            to members of the club.
         </p>
-        <img src="imegas" alt="">
+        <a class="button" href="#agenda">View Meeting Agenda</a>
+    </section>
 
-        <div class="event-info">
-            <p><strong> Date:</strong> October 9, 2026</p>
-            <p><strong> Time:</strong> 10:00 AM</p>
-            <p><strong> Venue:</strong> Computer Lab</p>
-        </div>
+    <main>
 
-        <button>Register Now</button>
-    </div> 
+        <!-- About Section -->
+        <section class="card" id="about">
+            <h2>About the ICT Club</h2>
+            <p>
+                The ICT Club helps students learn about computers,
+                technology, programming, and digital creativity.
+                Members work together to develop useful skills.
+            </p>
+
+            <p>
+                The club encourages teamwork, communication,
+                creativity, problem-solving, and responsible
+                use of technology.
+            </p>
+
+            <h3>Our Objectives</h3>
+            <ul>
+                <li>Improve students' computer skills.</li>
+                <li>Encourage students to learn programming.</li>
+                <li>Develop creative technology projects.</li>
+                <li>Promote teamwork among club members.</li>
+                <li>Prepare students for ICT Day activities.</li>
+            </ul>
+        </section>
+
+        <!-- Meeting Details -->
+        <section class="card">
+            <h2>Meeting Information</h2>
+
+            <div class="details">
+                <div class="detail-box">
+                    <h3>Date</h3>
+                    <p>15 October 2026</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Time</h3>
+                    <p>12:00 noon</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Venue</h3>
+                    <p>Computer Laboratory</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Prepared By</h3>
+                    <p>Ismoheel</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meeting Agenda -->
+        <section class="card" id="agenda">
+            <h2>Part A: Meeting Agenda</h2>
+
+            <p>
+                The agenda lists the topics that members
+                will discuss during the ICT Club meeting.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Opening Remarks</strong>
+                    <p>
+                        The president welcomes members and
+                        introduces the purpose of the meeting.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Review of Previous Activities</strong>
+                    <p>
+                        Members discuss previous activities,
+                        achievements, and areas for improvement.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Discussion of Upcoming ICT Day</strong>
+                    <p>
+                        Members discuss possible ICT Day activities,
+                        demonstrations, and presentations.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Planning Student Projects</strong>
+                    <p>
+                        Students suggest website projects,
+                        computer presentations, and coding activities.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Allocation of Responsibilities</strong>
+                    <p>
+                        Tasks are assigned to the president,
+                        Media Team, and Technical Team.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Closing Remarks</strong>
+                    <p>
+                        The president summarises the meeting
+                        and reminds members about their duties.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Meeting Minutes -->
+        <section class="card" id="minutes">
+            <h2>Part B: Meeting Minutes</h2>
+
+            <h3>1. Date and Venue</h3>
+            <p>
+                The meeting was scheduled for 15 October 2026
+                at 12:00 noon in the Computer Laboratory.
+            </p>
+
+            <h3>2. Members Present</h3>
+            <p>
+                Sample attendance: ICT Club President,
+                club members, Media Team representatives,
+                and Technical Team representatives.
+            </p>
+
+            <h3>3. Matters Discussed</h3>
+            <ul>
+                <li>Previous ICT Club activities were reviewed.</li>
+                <li>Preparations for ICT Day were discussed.</li>
+                <li>Student projects and coding ideas were considered.</li>
+                <li>Equipment needed for demonstrations was discussed.</li>
+                <li>Members discussed how to complete assigned tasks.</li>
+            </ul>
+
+            <h3>4. Decisions Taken</h3>
+            <ul>
+                <li>A list of proposed student projects will be prepared.</li>
+                <li>The Media Team will design an event poster.</li>
+                <li>The Technical Team will test the computer equipment.</li>
+                <li>Members will work together to prepare for ICT Day.</li>
+            </ul>
+
+            <h3>5. Responsibilities Assigned</h3>
+            <p>
+                Each team is expected to complete its assigned
+                work by the deadline.
+            </p>
+        </section>
+
+        <!-- Responsibilities Table -->
+        <section class="card" id="tasks">
+            <h2>Responsibilities and Deadlines</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Task</th>
+                        <th>Person Responsible</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Prepare project list</td>
+                        <td>ICT Club President</td>
+                        <td>20 October</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Design event poster</td>
+                        <td>Media Team</td>
+                        <td>22 October</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Test computer equipment</td>
+                        <td>Technical Team</td>
+                        <td>24 October</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Project Planning -->
+        <section class="card">
+            <h2>Student Project Planning</h2>
+
+            <p>
+                The ICT Club encourages members to create
+                practical projects that demonstrate their
+                computer and technology skills.
+            </p>
+
+            <h3>Suggested Projects</h3>
+            <ul>
+                <li>Personal portfolio website.</li>
+                <li>School event announcement webpage.</li>
+                <li>Student contact form.</li>
+                <li>Simple school information website.</li>
+                <li>Basic computer skills presentation.</li>
+            </ul>
+
+            <h3>Project Requirements</h3>
+            <p>
+                Students should plan their projects, organise
+                their files, test their work, and prepare a
+                short explanation of how each project works.
+            </p>
+        </section>
+
+        <!-- Meeting Rules -->
+        <section class="card">
+            <h2>ICT Club Meeting Rules</h2>
+
+            <ul>
+                <li>Arrive on time for meetings.</li>
+                <li>Respect the opinions of other members.</li>
+                <li>Listen carefully when someone is speaking.</li>
+                <li>Use school computers responsibly.</li>
+                <li>Complete assigned tasks before deadlines.</li>
+                <li>Keep the computer laboratory clean.</li>
+                <li>Work together to solve problems.</li>
+            </ul>
+        </section>
+
+        <!-- Next Meeting -->
+        <section class="card">
+            <h2>Next Meeting</h2>
+
+            <p>
+                The date and time of the next meeting will
+                be announced by the ICT Club President.
+            </p>
+
+            <p>
+                Members should complete their assigned tasks
+                and prepare updates for the next meeting.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card" id="contact">
+            <h2>Contact the ICT Club</h2>
+
+            <p>
+                For information about ICT Club activities,
+                contact the club president or your ICT teacher.
+            </p>
+
+            <p><strong>School:</strong> OCECS Digital Learning Centre</p>
+            <p><strong>Club:</strong> ICT Club</p>
+            <p><strong>Prepared by:</strong> Ismoheal</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>ICT CLUB</h2>
+        <p>Learning Technology, Building the Future.</p>
+        <p>Prepared by Ismoheel</p>
+        <p>&copy; 2026 OCECS Digital Learning Centre</p>
+    </footer>
+
 </body>
 </html>
