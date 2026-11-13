@@ -3,28 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About my school</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Movie website</title>
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> My school. </h1>
-    <strong>My school.</strong>
-    <p>My name is Ganiu Ismoheel.</p>
-    <p>I leave in Itesi Street.</p>
-    <P>I am 15years old.</P>
-    <p>I'm light in complexion.</p>
-    <p> The name of my school is OCECS which means Okesanjo Continuing Education And Community Support.</p>
-    <p>It located at itoko abeokuta ogun state.</p>
-    <p>My scool has four toilet.</p>
-    <p>It have a four classroom.</p>
-    <p>It as a computer lap.</p>
-    <p>It has bathroom.</p>
-    <P>It has a kitchen.</P>
-    <p>My school has hard office.</p>
-    <p>We have four teacher.</p>
-    <p>We has one hardteacher and assistant.</p>
-    <p>We have a lot of tables and chairs.</p>
-    <p>We have some students and teachers.</p>
-    <p>We have some of flour.</p> 
+  
+   <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">MovieZone 🎬</h1>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h2>Welcome to MovieZone</h2>
+
+            <p>
+                Discover amazing movies, exciting stories,
+                and your favorite films all in one place.
+            </p>
+
+            <button>Explore Movies</button>
+        </div>
+
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies" id="movies">
+
+        <h2>Latest Movies</h2>
+
+        <div class="movie-container">
+
+            <!-- Movie 1 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="Space Adventure">
+
+                <div class="movie-info">
+                    <h3>Space Adventure</h3>
+                    <p>⭐ 9.0/10</p>
+                    <p>Sci-Fi • Adventure</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="The Hero">
+
+                <div class="movie-info">
+                    <h3>The Hero</h3>
+                    <p>⭐ 8.7/10</p>
+                    <p>Action • Drama</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="Future World">
+
+                <div class="movie-info">
+                    <h3>Future World</h3>
+                    <p>⭐ 8.2/10</p>
+                    <p>Sci-Fi • Fantasy</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="The Lost City">
+
+                <div class="movie-info">
+                    <h3>The Lost City</h3>
+                    <p>⭐ 8.5/10</p>
+                    <p>Adventure • Mystery</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+            <!-- Movie 5 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="Dark Night">
+
+                <div class="movie-info">
+                    <h3>Dark Night</h3>
+                    <p>⭐ 8.8/10</p>
+                    <p>Action • Thriller</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+            <!-- Movie 6 -->
+            <div class="movie-card">
+
+                <img src="https://via.placeholder.com/300x400"
+                     alt="Ocean World">
+
+                <div class="movie-info">
+                    <h3>Ocean World</h3>
+                    <p>⭐ 8.4/10</p>
+                    <p>Fantasy • Adventure</p>
+                    <button>Watch Now</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular Section -->
+    <section class="popular" id="popular">
+
+        <h2>Popular Categories</h2>
+
+        <div class="categories">
+
+            <div class="category">
+                <h3>🎬 Action</h3>
+                <p>Exciting action and adventure movies.</p>
+            </div>
+
+            <div class="category">
+                <h3>🚀 Sci-Fi</h3>
+                <p>Explore amazing worlds and future technology.</p>
+            </div>
+
+            <div class="category">
+                <h3>😂 Comedy</h3>
+                <p>Enjoy funny movies with great stories.</p>
+            </div>
+
+            <div class="category">
+                <h3>👻 Horror</h3>
+                <p>Discover exciting mystery and horror movies.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About MovieZone</h2>
+
+        <p>
+            MovieZone is a simple movie website created for
+            movie lovers. Here you can discover different types
+            of movies and explore popular films.
+        </p>
+
+        <p>
+            This website was created using HTML and CSS as a
+            student web development project.
+        </p>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: moviezone@example.com</p>
+        <p>Phone: 0800 123 4567</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>MovieZone 🎬</h3>
+
+        <p>
+            Your place to discover amazing movies.
+        </p>
+
+        <p>
+            © 2026 MovieZone. All rights reserved.
+        </p>
+
+        <p>
+            Created by a future programmer 💻🚀
+        </p>
+
+    </footer> 
+
 </body>
 </html>
